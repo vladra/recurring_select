@@ -25,7 +25,8 @@ window.RecurringSelectDialog =
       @freq_select.focus()
 
     positionDialogVert: (initial_positioning) =>
-      window_height = $(window).height()
+      # window_height = $(window).height()
+      window_height = window.innerHeight
       window_width  = $(window).width()
       dialog_height = @content.outerHeight()
       if dialog_height < 80
